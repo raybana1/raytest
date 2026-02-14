@@ -1,3 +1,30 @@
+<nav class="navbar">
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item has-submenu">
+      <span class="nav-link">Admin</span>
+      <ul class="submenu">
+        <li><a routerLink="/admin/employees" routerLinkActive="active">Employees</a></li>
+        <li><a routerLink="/admin/users" routerLinkActive="active">Users</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/audit" routerLinkActive="active">Audit</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/lab" routerLinkActive="active">Lab</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/test2" routerLinkActive="active">Test2</a>
+    </li>
+    <li class="nav-item has-submenu">
+      <span class="nav-link">Test3</span>
+      <ul class="submenu">
+        <li><a routerLink="/test3/sub1" routerLinkActive="active">Sub1</a></li>
+        <li><a routerLink="/test3/sub2" routerLinkActive="active">Sub2</a></li>
+      </ul>
 <nav class="navbar" (mouseleave)="closeAdminDropdown()">
   <div class="navbar-brand">
     <a routerLink="/">Raytest</a>
