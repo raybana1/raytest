@@ -18,4 +18,16 @@ export const routes: Routes = [
   { path: 'test2', component: Test2 },
   { path: 'test3/sub1', component: Sub1 },
   { path: 'test3/sub2', component: Sub2 },
+import { Users } from './pages/admin/users/users';
+import { Employees } from './pages/admin/employees/employees';
+import { Lab } from './pages/lab/lab';
+import { Audit } from './pages/audit/audit';
+
+export const routes: Routes = [
+  { path: '', component: Home },
+  { path: 'admin/users', component: Users },
+  { path: 'admin/employees', component: Employees },
+  { path: 'lab', component: Lab },
+  { path: 'audit', component: Audit },
+  { path: '**', redirectTo: '' },
 ];
