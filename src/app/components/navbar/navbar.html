@@ -1,1 +1,23 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <a class="brand" routerLink="/">Raytest</a>
+  <ul class="nav-links">
+    <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+    <li><a routerLink="/audit" routerLinkActive="active">Audit</a></li>
+    <li><a routerLink="/lab" routerLinkActive="active">Lab</a></li>
+    <li><a routerLink="/test2" routerLinkActive="active">Test2</a></li>
+    <li class="dropdown">
+      <span class="dropdown-toggle">Test3</span>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/test3/sub1" routerLinkActive="active">Sub1</a></li>
+        <li><a routerLink="/test3/sub2" routerLinkActive="active">Sub2</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <span class="dropdown-toggle">Admin</span>
+      <ul class="dropdown-menu">
+        <li><a routerLink="/admin/employees" routerLinkActive="active">Employees</a></li>
+        <li><a routerLink="/admin/users" routerLinkActive="active">Users</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
